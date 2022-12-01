@@ -1,8 +1,6 @@
 import tactic
 import ring_theory.ideal.basic
 
-open set
-
 variables {A: Type} [comm_ring A]
 
 #check (univ: set (ideal A))
