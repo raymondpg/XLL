@@ -8,7 +8,7 @@ import data.set.basic         -- for creating sets
 def remainder_set : ℤ → ℤ → set ℕ := λ a, λ b, { y | ∃ x : ℤ, (y : ℤ) = a - b * x}
 
 -- lemma using the definition of remainder_set (to make it easier to work with)
-
+--
 lemma mem_remainder_set_iff {a b : ℤ} {k : ℕ}  : (k ∈ remainder_set a b) ↔
   ∃ x : ℤ, (k : ℤ) = a - b * x :=
   begin
