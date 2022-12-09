@@ -45,6 +45,7 @@ begin
   specialize ht u v,
   specialize ht hu hv,
   specialize ht (subset.trans ts hs),
+  -- x proves t ∩ u nonempty, z proves t ∩ v nonempty
   have h1 : x ∈ t ∩ u, {
   split,
   exact xt,
